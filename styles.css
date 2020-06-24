@@ -65,22 +65,22 @@ header{
     background-color: white;
     border-radius: 10px;
 }
-.price-card:nth-child(odd){
+.price-card:nth-child(even){
     background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 }
-.price-card:nth-child(odd) > .plan{
+.price-card:nth-child(even) > .plan{
     color:white;
 }
-.price-card:nth-child(odd) > .feature {
+.price-card:nth-child(even) > .feature {
     color:white
 }
-.price-card:nth-child(odd) > .annualPrice{
+.price-card:nth-child(even) > .annualPrice{
     color: white;
 }
-.price-card:nth-child(odd) > .monthPrice{
+.price-card:nth-child(even) > .monthPrice{
     color:white;
 }
-.price-card:nth-child(odd) > .learn-btn{
+.price-card:nth-child(even) > .learn-btn{
     background: unset;
     background-color: white;
     color:hsl(237, 63%, 64%);
@@ -111,4 +111,20 @@ header{
 }
 .hidden{
     display:none;
+}
+
+@media (min-width:415px){
+
+    #cards{
+        display:flex;
+        flex-flow:row nowrap;
+    }
+    header{
+        width:40%;
+        margin: 5% auto 0 auto;
+    }
+    .price-card{
+        margin: 0;
+    }
+
 }
