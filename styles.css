@@ -1,0 +1,70 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    height:100%;
+}
+body{
+    background-color:hsl(234, 14%, 74%);
+}
+header{
+    width:85%;
+    margin: 15% auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#pricing-title{
+    font-size: 24pt;
+    margin: 5% auto;
+}
+#toggle-area{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25px;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+#annual{
+    order:1
+}
+#toggler{
+    order:2;
+    display:flex;
+    background-color: black;
+    height:20px;
+    width:40px;
+    /*justify-content: right; 
+    (this will move the boggle)*/
+}
+#boggle{
+    height:20px;
+    width:20px;
+    border-radius: 100%;
+    background-color: white;
+}
+#month{
+    order:3;
+}
+.price-card{
+    display:flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    text-align:center;
+    margin: 5% auto;
+    padding: 5% 0;
+    background-color: white;
+}
+.plan{
+    color: grey;
+}
+.annualPrice, .monthPrice{
+    font-size:45pt;
+}
+.feature{
+    border-top:grey 1px solid
+}
+.hidden{
+    display:none;
+}
