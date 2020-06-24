@@ -52,18 +52,33 @@ header{
     flex-flow: column nowrap;
     width: 90%;
     text-align:center;
-    margin: 5% auto;
+    margin: 15% auto;
     padding: 5% 0;
     background-color: white;
+    border-radius: 10px;
 }
 .plan{
     color: grey;
 }
 .annualPrice, .monthPrice{
     font-size:45pt;
+    margin: 5%;
 }
 .feature{
-    border-top:grey 1px solid
+    border-top:grey 1px solid;
+    width: 90%;
+    margin: 0% auto;
+    padding: 5% 0;
+}
+.wrap{
+    display:flex;
+}
+.learn-btn{
+    width:90%;
+    height: 50px;
+    border-radius: 5px;
+    margin: auto;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))
 }
 .hidden{
     display:none;
