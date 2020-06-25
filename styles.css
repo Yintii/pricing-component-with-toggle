@@ -8,6 +8,7 @@ html{
 }
 body{
     background-color:hsl(240, 100%, 97%);
+
 }
 header{
     width:85%;
@@ -60,7 +61,7 @@ header{
     flex-flow: column nowrap;
     width: 70%;
     text-align:center;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 10% 10%;
     background-color: white;
     border-radius: 10px;
@@ -114,17 +115,24 @@ header{
 }
 
 @media (min-width:415px){
-
+    body{
+        width:100rem;
+    }
     #cards{
         display:flex;
         flex-flow:row nowrap;
+        width:70%;
+        margin:auto auto 0 auto;
     }
     header{
         width:40%;
-        margin: 5% auto 0 auto;
+        margin: 0% auto 0 auto;
     }
     .price-card{
-        margin: 0;
+        padding: 5% 5%;
+    }
+    .price-card:nth-child(even){
+        margin:5% auto;
     }
 
 }
