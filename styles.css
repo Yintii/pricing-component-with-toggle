@@ -111,13 +111,20 @@ header{
 .hidden{
     display:none;
 }
-
+.fadeIn{
+    opacity: 1;
+    animation: fadeIn 2s none;
+}
+.fadeOut{
+    opacity: 0;
+    animation: fadeOut 2s none;
+}
 .toggled{
-    animation: toggle .5s none;
+    animation: toggle 1s none;
     left:43px;
 }
 .untoggled{
-    animation: untoggle .5s none;
+    animation: untoggle 1s none;
     left: 2px;
 }
 
@@ -160,5 +167,23 @@ header{
     }
     100%{
         left:2px;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
